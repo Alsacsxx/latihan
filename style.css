@@ -1,0 +1,224 @@
+@import url('https://fonts.googleapis.com/css2?family=Concert+One&family=DynaPuff:wght@400..700&family=Itim&family=Nerko+One&family=Rubik+Wet+Paint&family=Signika:wght@300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Itim&family=Rubik+Wet+Paint&family=Signika:wght@300..700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Century Gothic", 'Loto', sans-serif;
+}
+
+body {
+    background-color: #c67676be;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    background-image: url('https://i.pinimg.com/736x/53/e1/f4/53e1f44c89ebaa55bbf8c3f24289ed53.jpg');
+    width: 1000%;
+    max-width: 600px;
+    background-color: white;
+    padding: 20px;
+    border-radius: 30px;
+    box-shadow: 0px 0px 500px rgba(0, 0, 0, 0.23);
+    cursor: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24"><path fill="%23FFF" stroke="%23000" stroke-width="2" stroke-linejoin="round" d="M12 8S9.75 5 7 5a4.5 4.5 0 0 0-4.5 4.5C2.5 14.5 12 20 12 20s9.5-5.5 9.5-10.5A4.5 4.5 0 0 0 17 5c-2.75 0-5 3-5 3Z"></path></svg>') 24 24, auto;
+}
+
+.typing {
+    overflow: hidden;
+    white-space: nowrap;
+    border-right: 3px solid #333;
+    width: 0;
+    animation: typing 3s steps(15) forwards, blink-caret 0.75s step-end infinite;
+}
+
+@keyframes typing {
+    from {
+        width: 0;
+    }
+
+    to {
+        width: 22%;
+    }
+}
+
+@keyframes blink-caret {
+
+    from,
+    to {
+        border-color: transparent;
+    }
+
+    50% {
+        border-color: #33333300;
+    }
+}
+
+h1 {
+    font-family: "Signika", serif;
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+h1:hover {
+    color: #953d3d;
+    transform: scale(1.1);
+}
+
+.paragraph {
+    font-family: "Concert One", sans-serif;
+    color: #323032;
+    font-weight: 100;
+    font-size: 20px;
+}
+
+.profile-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    padding-left: 180px;
+}
+
+.profile-pic {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border: 2px solid #3e4a56;
+    box-shadow: 0 4px 15px #581a1a;
+    transition: 0.4s ease;
+    cursor: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"><g fill="%23000"><path d="M18 7c-3 0-5.5-1.5-9 2s-2 6-2 9c0 5 4.1 5.63 6 5 3-1 1-3 4-6s5-1 6-4c.63-1.9 0-6-5-6Z"></path><circle cx="8.2" cy="4" r="2"></circle><circle cx="4" cy="8.2" r="2"></circle><circle cx="14" cy="3" r="2"></circle><circle cx="3" cy="14" r="2"></circle></g></svg>') 24 24, auto;
+}
+
+.profile-pic:hover {
+    transform: scale(1.1);
+}
+
+.hobby {
+    text-align: left;
+    margin-top: 20px;
+}
+
+.lii {
+    font-family: "Concert One", sans-serif;
+    color: #221d1dd0;
+    font-size: 20px;
+}
+
+.hobby h3 {
+    color: #3c2525;
+    margin-bottom: 10px;
+    font-variant: small-caps;
+    cursor: pointer;
+}
+
+.hobby h3:hover {
+    color: #852029;
+}
+
+.hobby ul {
+    padding-left: 20px;
+    color: #3a1414;
+}
+
+.about h3 {
+    color: #3c2525;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-variant: small-caps;
+    cursor: pointer;
+}
+
+.about h3:hover {
+    color: #852029;
+}
+
+.this-table {
+    background-color: #ebd7d789;
+    padding: 10px;
+    border-radius: 8px;
+}
+
+.this-row {
+    display: flex;
+    padding: 8px 0;
+    border-bottom: 1px solid #000000;
+}
+
+.this-row:last-child {
+    border-bottom: none;
+}
+
+.this-label {
+    width: 40%;
+    font-weight: bold;
+    color: #3c3232e3;
+}
+
+.this-value {
+    width: 60%;
+    font-weight: 1000;
+    color: #423131;
+}
+
+.contact h3 {
+    color: #3c2525;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-variant: small-caps;
+    cursor: pointer;
+}
+
+.contact h3:hover {
+    color: #852029;
+}
+
+.contact form {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact form label {
+    font-family: "Signika", serif;
+    font-size: 20px;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.contact form input,
+.contact form textarea {
+    padding: 10px;
+    border: 4px solid #ccc;
+    border-radius: 15px;
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+
+.contact form button {
+    font-family: "Signika", serif;
+    width: 500px;
+    margin-left: 30px;
+    padding: 10px;
+    background-color: #d28282;
+    color: white;
+    border: none;
+    border-radius: 50px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.contact form button:hover {
+    background-color: #bc6060;
+    transform: scale(1.1);
+}
+
+a {
+    color: #2a2827;
+    text-decoration: none;
+}
